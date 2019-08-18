@@ -1,0 +1,23 @@
+The first step gives the element that may be majority element in the array. 
+If there is a majority element in an array, then this step will definitely return majority element, 
+otherwise it will return candidate for majority element.
+Check if the element obtained from above step is majority element.
+This step is necessary as we are not always sure that element return by first step is majority element.
+
+
+1. Finding a candidate
+findCandidate(a[], size)
+1.  Initialize index and count of majority element
+     maj_index = 0, count = 1
+2.  Loop for i = 1 to size – 1
+    (a) If a[maj_index] == a[i]
+          count++
+    (b) Else
+        count--;
+    (c) If count == 0
+          maj_index = i;
+          count = 1
+3.  Return a[maj_index]
+
+2. Check if the element obtained in step 1 is majority element or not :
+

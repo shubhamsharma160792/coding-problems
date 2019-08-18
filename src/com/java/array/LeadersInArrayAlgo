@@ -1,0 +1,2 @@
+Scan all the elements from right to left in array and keep track of maximum till now. When maximum changes it’s value, print it.
+
