@@ -46,29 +46,23 @@ public class TreeTraversal {
         if (root == null)
             return;
         System.out.print(root.data);
-        if (root.left != null)
-            printPreOrderRecursive(root.left);
-        if (root.right != null)
-            printPreOrderRecursive(root.right);
+        printPreOrderRecursive(root.left);
+        printPreOrderRecursive(root.right);
     }
 
     private void printInOrderRecursive(TreeNode root) {
         if (root == null)
             return;
-        if (root.left != null)
-            printInOrderRecursive(root.left);
+        printInOrderRecursive(root.left);
         System.out.print(root.data);
-        if (root.right != null)
-            printInOrderRecursive(root.right);
+        printInOrderRecursive(root.right);
     }
 
     private void printPostOrderRecursive(TreeNode root) {
         if (root == null)
             return;
-        if (root.left != null)
-            printPostOrderRecursive(root.left);
-        if (root.right != null)
-            printPostOrderRecursive(root.right);
+        printPostOrderRecursive(root.left);
+        printPostOrderRecursive(root.right);
         System.out.print(root.data);
     }
 
